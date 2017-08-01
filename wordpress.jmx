@@ -256,7 +256,7 @@
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">welcomeMessage = vars.get(&quot;login_user_name&quot;);
-username = welcomeMessage.split(&quot;,&quot;)[1].trim();
+username = welcomeMessage.split(&quot;，&quot;)[1].trim();
 vars.put(&quot;username&quot;, username);
 threadNum = ctx.getThreadNum() + 1;
 AssertionResult.setFailure(!(vars.get(&quot;user&quot; + threadNum) == username));
